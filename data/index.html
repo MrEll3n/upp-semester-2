@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>UPP SP2</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1em;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: #333;
+            margin-bottom: 0;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            padding: 0.5em;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>KIV/UPP SP2</h1>
+    <p>Toto je frontend řídicího uzlu semestrální práce z předmětu KIV/UPP.</p>
+    <h2>Webový crawler</h2>
+    <p>Zadejte URL pro procházení. Vstup může obsahovat více URL na samostatných řadcích.</p>
+    <form action="/submit" method="post">
+        <textarea name="vstup"></textarea><br />
+        <input type="submit" value="Odeslat" />
+    </form>
+    <p>
+        Zadáním URL do formuláře prohlašuji, že všechna zadaná URL směřují na stránky, které jsem oprávněn(a) tímto způsobem procházet.
+    </p>
+</body>
+</html>
